@@ -1,4 +1,4 @@
-package com.korit.util;
+package com.korit.study1.util;
 
 /*
 * 정적 초기화 블록
@@ -6,7 +6,7 @@ package com.korit.util;
 * - 요즘은 mysql connector/j를 쓰면 대부분 자동 등록이 된다.
 * */
 
-import com.korit.config.DBConfig;
+import com.korit.study1.config.DBConfig;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

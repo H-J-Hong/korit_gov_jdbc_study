@@ -1,4 +1,4 @@
-package com.korit.entity;
+package com.korit.study1.entity;
 
 
 import lombok.Builder;
