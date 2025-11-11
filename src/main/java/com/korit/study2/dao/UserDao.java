@@ -125,9 +125,9 @@ public class UserDao {
                 PreparedStatement ps = con.prepareStatement(sql)
                 ) {
             ps.setString(1, "%" + username + "%");
-            ResultSet rs = ps.executeQuery();
-            while (rs.next()) {
-                getUserListRespDtos.add(toGetUserListRespDto(rs));
+
+            try (ResultSet rs = ps.executeQuery()) {
+                while (rs.next()) getUserListRespDtos.add(toGetUserListRespDto(rs));
             }
 
         } catch (SQLException e) {
